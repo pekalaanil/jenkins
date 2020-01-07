@@ -11,14 +11,16 @@ pipeline{
                  echo 'Build Stage is processing'
             }
         }
-        stage('Compile'){
-             echo 'Compile Stage is processing'
+        stage('Compile Stage'){
+            steps{
+                 echo 'Compile Stage is processing'
+            }
         }
-        stage('Deploy'){
-             echo 'Deploy Stage is processing'
+        stage('Deploy Stage'){
+            steps{
+                 echo 'Deploy Stage is processing'
+            }
         }
-        stage('Final Stage'){
-             echo 'Final Stage is processing'
-        }
+
     }
 }
