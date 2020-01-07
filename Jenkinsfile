@@ -3,22 +3,22 @@ pipeline{
     stages{
         stage('Download Code'){
             steps{
-                echo 'This is Downloading code stage'
+                sh 'echo This is Downloading code stage'
             }
         }
         stage('Build Stage'){
             steps{
-                echo 'Build Stage is processing'
+                sh 'echo Build Stage is processing'
             }
         }
-        stage('Compail'){
-            echo 'this is compail stage'
+        stage('Compile'){
+            sh 'echo Compile Stage is processing'
         }
         stage('Deploy'){
-            echo 'this is deploy stage'
+            sh 'echo Deploy Stage is processing'
         }
         stage('Final Stage'){
-            echo 'This is final stage.'
+            sh 'echo Final Stage is processing'
         }
     }
 }
