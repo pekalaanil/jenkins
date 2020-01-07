@@ -16,6 +16,11 @@ pipeline{
                  echo 'Compile Stage is processing'
             }
         }
+        stage('Docker Image'){
+            steps{
+                echo 'Docker Stage...'
+            }
+        }
         stage('Deploy Stage'){
             steps{
                  echo 'Deploy Stage is processing'
